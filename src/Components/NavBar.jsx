@@ -1,0 +1,37 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "../Styles/NavBar.scss";
+import logo from "../img/golden-shoe-logo.png";
+
+const NavBar = () => (
+  <div className="NavBar">
+    <ul className="NavBar">
+      <div className="dropdown-menu">
+        <button className="dropdown-btn">
+          <ion-icon name="ios-menu" />
+        </button>
+        <div className="dropdown-content">
+          <Link to="/for-women" className="item">
+            For Women
+          </Link>
+          <Link to="/for-men" className="item">
+            For Men
+          </Link>
+          <Link to="/faq" className="item">
+            FAQs
+          </Link>
+        </div>
+      </div>
+      <Link to="/">
+        <img src={logo} alt="Golden Shoe Logo" className="company-logo" />
+      </Link>
+      <div className="extra-buttons">
+        <ion-icon name="ios-basket" />
+        <ion-icon name="person" />
+      </div>
+    </ul>
+  </div>
+);
+
+export default NavBar;
