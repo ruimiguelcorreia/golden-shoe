@@ -1,7 +1,7 @@
 .NavBar {
   height: 10vh;
   width: 100vw;
-  background-color: #f5f5f5;
+  background-color: #fff;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   align-items: center;
@@ -17,7 +17,7 @@
   border: none;
   outline: none;
   font-size: 25pt;
-  color: rgb(161, 123, 25);
+  color: #D4AF37;
   margin: 0;
   & .ios-menu {
     height: fit-content;
@@ -27,16 +27,14 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: goldenrod;
+  background-color: #D4AF37;
   z-index: 1;
   padding: 10%;
 }
 
-.dropdown-item {
-  float: none;
-  font-size: 15pt;
-  text-align: left;
+.item {
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .company-logo {
@@ -51,7 +49,45 @@
 
 .extra-buttons {
   font-size: 22pt;
-  color: rgb(161, 123, 25);
+  color: #D4AF37;
   display: flex;
   justify-content: space-evenly;
 }
+
+$ipad-width: 1024px;
+$desktop-width: 1365px;
+
+
+  @media screen and (min-width: #{$ipad-width}) {
+    .NavBar {
+      display: grid;
+      grid-template-columns: 30% 40% 30%;
+    }
+
+    .dropdown-btn {
+      display: none;
+    }
+
+    .dropdown-content {
+      display: flex;
+      justify-content: stretch;
+      padding: 0;
+      background-color: #fff;
+      position: relative;
+    }
+    
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+      height: 10vh;
+      font-size: 12pt;
+      margin: 0;
+      color: #5A382A;
+    }
+    
+    .extra-buttons {
+      font-size: 30pt;
+    }
+  }

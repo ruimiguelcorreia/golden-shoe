@@ -1,8 +1,60 @@
 .Homepage {
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
   background-image: url(../img/homepage-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  grid-template-rows: 12vh 57vh 25vh;
 }
+
+.company-name {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-size: 50pt;
+  text-align: right;
+  padding: 25% 5% 0 0;
+}
+
+.homepage-links {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-evenly;
+  .homepage-btn {
+    background-image: linear-gradient(to bottom, #D4AF37, #7F6400) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11pt;
+    height: 5vh;
+    width: 30%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+$ipad-width: 1024px;
+$desktop-width: 1365px;
+
+
+@media screen and (min-width: #{$ipad-width}) {
+  .company-name{
+    font-size: 80pt;
+    text-align: right;
+    text-align: center;
+    padding: 15% 0 0 0;
+  }
+  .homepage-links {
+    .homepage-btn {
+      font-size: 15pt;
+      width: 20%;
+      height: 7.5vh;
+    }
+  }
+}
+
+

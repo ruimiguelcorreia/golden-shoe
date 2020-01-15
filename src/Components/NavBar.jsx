@@ -13,10 +13,10 @@ const NavBar = () => (
         </button>
         <div className="dropdown-content">
           <Link to="/for-women" className="item">
-            For Women
+            Women
           </Link>
           <Link to="/for-men" className="item">
-            For Men
+            Men
           </Link>
           <Link to="/faq" className="item">
             FAQs

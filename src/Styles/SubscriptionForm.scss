@@ -1,0 +1,55 @@
+.SubscriptionBox {
+    width: 100vw;
+    height: 12vh;
+    background-color: #D4AF37;
+    & p {
+        text-transform: uppercase;
+        font-size: 9pt;
+        text-align: center;
+        margin: 4vw 4vh 2vw 4vh;
+        color: #fff;
+    }
+}
+
+.subscription-form {
+    margin: 1.5vh 20vw 0 20vw;
+    & input {
+        width: 53.5vw;
+        height: 3vh;
+        border: none;
+        text-align: center;
+    }
+    & button {
+        border: none;
+        width: 6.5vw;
+        height: 3vh;
+        background-color: #5A382A;
+        color: #fff;
+    }
+}
+
+$ipad-width: 1024px;
+$desktop-width: 1365px;
+
+
+  @media screen and (min-width: #{$ipad-width}) and (max-width: #{$desktop-width}) {
+    .SubscriptionBox p {
+        font-size: 11pt;
+        margin: 1vw 4vh 0vw 6vh;
+    }
+
+    .subscription-form {
+        margin: 1.5vh 25vw 0 25vw;
+        & input {
+            font-size: 13pt;
+            height: 5vh;
+            width: 40vw;
+        }
+        & button {
+            width: 5vw;
+            font-size: 13pt;
+            color: #fff;
+            height: 5vh;
+        }
+    }
+  }
