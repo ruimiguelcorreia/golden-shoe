@@ -27,7 +27,7 @@
 }
 
 .dropdown-content {
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   height: 90vh;
   width: 90vw;
   display: none;
@@ -36,7 +36,16 @@
   z-index: 1;
 }
 
+.close-btn{
+  position: absolute;
+  right: 0;
+  font-size: 25pt;
+  height: 5vh;
+  width: 5vh;
+}
+
 .item {
+  font-size: 15pt;
   margin: 2vh;
   color: #f5f5f5;
   text-decoration: none;
@@ -49,7 +58,7 @@
 }
 
 /* Show the dropdown menu on hover */
-.dropdown-menu:hover .dropdown-content {
+.dropdown-menu:hover .dropdown-content{
   display: flex;
   flex-direction: column;
 }

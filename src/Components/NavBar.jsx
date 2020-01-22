@@ -1,18 +1,26 @@
-import React from "react";
+import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import animated from "animate.css";
 
 import "../Styles/NavBar.scss";
 import logo from "../img/golden-shoe-logo.png";
 
-const NavBar = () => (
+class NavBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
+  
+  render() {
+    return(
   <div className="NavBar">
     <ul className="NavBar">
       <div className="dropdown-menu">
         <button className="dropdown-btn">
           <ion-icon name="ios-menu" />
         </button>
-        <div className="dropdown-content animated fadeInLeft">
+        <div className='dropdown-content animated fadeInLeft'>
           <Link to="/for-women" className="item">
             Women
           </Link>
@@ -22,6 +30,7 @@ const NavBar = () => (
           <Link to="/faq" className="item">
             FAQs
           </Link>
+          <button className='close-btn' onClick={this.closeDropdown}><ion-icon name='close'/></button>
         </div>
       </div>
       <Link to="/">
@@ -33,6 +42,7 @@ const NavBar = () => (
       </div>
     </ul>
   </div>
-);
+  )}
+};
 
 export default NavBar;
