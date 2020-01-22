@@ -1,0 +1,186 @@
+{
+  "women": [
+    {
+      "id": 1,
+      "title": "Crocodile-patterned boots",
+      "type": "knee-high boots",
+      "color": "black",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/28/0f/280f205b047dea5d80317d622fc51d29088150a1.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "49.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 2,
+      "title": "Tasselled loafers",
+      "type": "loafers",
+      "color": "black",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/3c/80/3c80f72fa2728509372b1f1202eb7c5577163ce5.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "29.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 3,
+      "title": "Warm-lined boots",
+      "type": "boots",
+      "color": "beige",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/a5/31/a5311bfee89392b872d69a793dd2466d3cebed9e.jpg],origin[dam],category[ladies_shoes_ankle_boots],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "29.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 4,
+      "title": "Pointed ankle boots",
+      "type": "ankle boots",
+      "color": "black",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/b6/28/b6286550cd530680e5197de659a20e2cabf321a7.jpg],origin[dam],category[ladies_shoes_ankle_boots],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "34.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 5,
+      "title": "Warm-lined Chelsea boots",
+      "type": "boots",
+      "color": "white",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/f6/a6/f6a6380d134cc2e081bb92257beee086c0cb206d.jpg],origin[dam],category[ladies_shoes_boots],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "29.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 6,
+      "title": "Trainers",
+      "type": "trainers",
+      "color": "light pink",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/ff/a0/ffa07b96c5e67de3b3075d505c626b632e2a8e8e.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "24.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 7,
+      "title": "Crocodile-patterned boots",
+      "type": "knee-high boots",
+      "color": "white",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/39/3e/393e70b5710e42af4170bd82b8db28df8290e969.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "49.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 8,
+      "title": "Trainers",
+      "type": "trainers",
+      "color": "cream",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/40/3b/403bfef476c794b4c29b646f76d4505e9d890403.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "19.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 9,
+      "title": "Chelsea boots",
+      "type": "boots",
+      "color": "dark brown",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/af/6b/af6b5015916a781c882836b5c296cd422cd0eefc.jpg],origin[dam],category[ladies_shoes_boots],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "24.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    },
+    {
+      "id": 10,
+      "title": "Cotton twill boots",
+      "type": "boots",
+      "color": "light beige",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/04/c7/04c7a8961860cad2a66339ecdc26c48b37e496d0.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "49.99",
+      "sizes": "[2.5, 3.5, 4, 5, 6, 6.5, 7.5, 8]"
+    }
+  ],
+  "men": [
+    {
+      "id": 1,
+      "title": "Canvas trainers",
+      "type": "trainers",
+      "color": "black",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/d5/9a/d59a711c9b2efcd8410c17a41a603303dc6db9bd.jpg],origin[dam],category[men_shoes_sneakers],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/main]",
+      "price": "19.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 2,
+      "title": "Chelsea boots",
+      "type": "boots",
+      "color": "burgundy",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/31/fc/31fcc1278e8436b531773df1f749643b35464448.jpg],origin[dam],category[men_shoes_boots],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "34.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 3,
+      "title": "Leather trainers",
+      "type": "trainers",
+      "color": "white",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/53/52/53524f36f0d6b9d28735c8c4258ec3badc5f5cb4.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[s],hmver[1]&call=url[file:/product/main]",
+      "price": "49.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 4,
+      "title": "Boots",
+      "type": "boots",
+      "color": "dark brown",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/b3/f1/b3f1f96d9d4b61fae60e8f71ca3b2a77a568d933.jpg],origin[dam],category[men_shoes_boots],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "49.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 5,
+      "title": "Derby shoes",
+      "type": "shoes",
+      "color": "dark blue",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/37/fd/37fd2c7e202691c11a8303493c0eb0021d8b1acf.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "29.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 6,
+      "title": "Boots",
+      "type": "boots",
+      "color": "Ochre",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/f6/60/f660035bfda346a716bcaed936b1ab5284a4ff69.jpg],origin[dam],category[men_shoes_boots],type[DESCRIPTIVESTILLLIFE],res[s],hmver[2]&call=url[file:/product/main]",
+      "price": "39.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 7,
+      "title": "Hi-top trainers",
+      "type": "trainers",
+      "color": "dark blue",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/bc/da/bcda1901ed3de1ae778f993b663d8c7a3010d1b0.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "34.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 8,
+      "title": "Brogue-patterned boots",
+      "type": "boots",
+      "color": "dark brown",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/4d/92/4d92459d06655dc967d1e6a5a5e1c43065eb8e23.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "39.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 9,
+      "title": "Trainers",
+      "type": "trainers",
+      "color": "light grey",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/23/62/23623dd69902581de78905d2c4e4636b9c37057c.jpg],origin[dam],category[men_shoes_sneakers],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]",
+      "price": "79.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    },
+    {
+      "id": 10,
+      "title": "Slip-on trainers",
+      "type": "trainers",
+      "color": "grey marl",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/f5/32/f53277174459e513b50f4a84409d4961662146cb.jpg],origin[dam],category[men_shoes_sneakers],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/main]",
+      "price": "17.99",
+      "sizes": "[6, 6.5, 7.5, 8, 9, 9.5, 10.5, 11]"
+    }
+  ]
+}

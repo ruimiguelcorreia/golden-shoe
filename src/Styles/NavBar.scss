@@ -2,6 +2,7 @@
   height: 10vh;
   width: 100vw;
   background-color: #fff;
+  box-shadow: 0px -9px 11px #555;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   align-items: center;
@@ -13,28 +14,34 @@
 }
 
 .dropdown-btn {
+  height: 10vh;
+  width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
   font-size: 25pt;
-  color: #D4AF37;
+  color: #d4af37;
   margin: 0;
-  & .ios-menu {
-    height: fit-content;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .dropdown-content {
+  animation-duration: 2s;
+  height: 90vh;
+  width: 90vw;
   display: none;
   position: absolute;
-  background-color: #D4AF37;
+  background-color: #d4af37ed;
   z-index: 1;
-  padding: 10%;
 }
 
 .item {
+  margin: 2vh;
+  color: #f5f5f5;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .company-logo {
@@ -49,7 +56,7 @@
 
 .extra-buttons {
   font-size: 22pt;
-  color: #D4AF37;
+  color: #d4af37;
   display: flex;
   justify-content: space-evenly;
 }
@@ -57,37 +64,36 @@
 $ipad-width: 1024px;
 $desktop-width: 1365px;
 
-
-  @media screen and (min-width: #{$ipad-width}) {
-    .NavBar {
-      display: grid;
-      grid-template-columns: 30% 40% 30%;
-    }
-
-    .dropdown-btn {
-      display: none;
-    }
-
-    .dropdown-content {
-      display: flex;
-      justify-content: stretch;
-      padding: 0;
-      background-color: #fff;
-      position: relative;
-    }
-    
-    .item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30%;
-      height: 10vh;
-      font-size: 12pt;
-      margin: 0;
-      color: #5A382A;
-    }
-    
-    .extra-buttons {
-      font-size: 30pt;
-    }
+@media screen and (min-width: #{$ipad-width}) {
+  .NavBar {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
   }
+
+  .dropdown-btn {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: flex;
+    justify-content: stretch;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 10vh;
+    font-size: 12pt;
+    margin: 0;
+    color: #5a382a;
+  }
+
+  .extra-buttons {
+    font-size: 30pt;
+  }
+}

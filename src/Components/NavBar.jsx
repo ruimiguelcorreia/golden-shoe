@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import animated from "animate.css";
 
 import "../Styles/NavBar.scss";
 import logo from "../img/golden-shoe-logo.png";
@@ -11,7 +12,7 @@ const NavBar = () => (
         <button className="dropdown-btn">
           <ion-icon name="ios-menu" />
         </button>
-        <div className="dropdown-content">
+        <div className="dropdown-content animated fadeInLeft">
           <Link to="/for-women" className="item">
             Women
           </Link>

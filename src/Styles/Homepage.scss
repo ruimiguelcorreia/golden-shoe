@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-evenly;
   .homepage-btn {
-    background-image: linear-gradient(to bottom, #D4AF37, #7F6400) ;
+    background-image: linear-gradient(to bottom, #d4af37, #7f6400);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,9 +40,8 @@
 $ipad-width: 1024px;
 $desktop-width: 1365px;
 
-
 @media screen and (min-width: #{$ipad-width}) {
-  .company-name{
+  .company-name {
     font-size: 80pt;
     text-align: right;
     text-align: center;
@@ -56,5 +55,3 @@ $desktop-width: 1365px;
     }
   }
 }
-
-
