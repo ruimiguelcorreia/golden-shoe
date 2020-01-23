@@ -20,8 +20,9 @@
         text-align: center;
     }
     & button {
+        display: inline-block;
         border: none;
-        width: 6.5vw;
+        width: 6vw;
         height: 3vh;
         background-color: #5A382A;
         color: #fff;

@@ -20,24 +20,6 @@ class ForWomen extends Component {
     );
   }
 
-  // componentDidUpdate(prevProps) {
-  //   const { search } = this.props.location;
-
-  //   if (prevProps.location.search !== search) {
-  //     Axios.get(`http://localhost:3000/women${search}`)
-  //       .then(({ data: products }) => this.setState({ products }))
-  //       .catch(err => console.error(err));
-  //   }
-  // }
-
-  // buildQueryString = (operation, valueObj) => {
-  //   const {
-  //     location: { search }
-  //   } = this.props;
-
-  //   const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
-  // };
-
   render() {
     const { products } = this.state;
     return (
@@ -45,9 +27,6 @@ class ForWomen extends Component {
         <p className="display-category">for Her</p>
         <div className="display-options">
           <button className="left-btn">Filter</button>
-          {/* <div className="filter-dropwdown">
-            <Link to={`/for-women/?query={"type":"Boots"}`}>Boots</Link>
-          </div> */}
           <button>Sort</button>
         </div>
         <div className="products">
