@@ -1,11 +1,36 @@
-.display-category {
+.display-category-women {
   height: 10vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Tangerine";
   font-size: 26pt;
   color: #d4af37;
+  background-image: url(../img/banner-woman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.display-category-men {
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tangerine";
+  font-size: 26pt;
+  color: #d4af37;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/banner-man.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .display-options {
@@ -13,7 +38,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 2vh;
-
+  overflow: hidden;
   & button {
     height: 100%;
     width: 50%;
@@ -26,10 +51,62 @@
   }
 }
 
+.working-area {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  overflow: hidden;
+  width: 100%;
+}
+
 .products {
+  overflow: hidden;
   width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.more-info {
+  display: none;
+}
+
+$ipad-width: 1024px;
+$desktop-width: 1365px;
+
+@media screen and (min-width: #{$desktop-width}) {
+  .display-category-women {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tangerine";
+    font-size: 56pt;
+    color: #d4af37;
+  }
+
+  .display-category-men {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tangerine";
+    font-size: 56pt;
+    color: #d4af37;
+  }
+
+  .products {
+    margin-top: 2vh;
+    width: 70vw;
+  }
+
+  .more-info {
+    display: flex;
+    width: 30vw;
+    height: 55vh;
+    background-color: #fff;
+    margin-top: 3vh;
+  }
 }

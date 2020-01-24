@@ -1,8 +1,8 @@
 .NavBar {
   height: 10vh;
   width: 100vw;
+  overflow: hidden;
   background-color: #fff;
-  box-shadow: 0px -9px 11px #555;
   display: grid;
   grid-template-columns: 25% 50% 25%;
   align-items: center;
@@ -27,7 +27,6 @@
 }
 
 .dropdown-content {
-  animation-duration: 1.5s;
   height: 90vh;
   width: 90vw;
   display: none;
@@ -36,7 +35,7 @@
   z-index: 1;
 }
 
-.close-btn{
+.close-btn {
   position: absolute;
   right: 0;
   font-size: 25pt;
@@ -58,7 +57,7 @@
 }
 
 /* Show the dropdown menu on hover */
-.dropdown-menu:hover .dropdown-content{
+.dropdown-menu:hover .dropdown-content {
   display: flex;
   flex-direction: column;
 }
@@ -79,20 +78,33 @@ $desktop-width: 1365px;
     grid-template-columns: 30% 40% 30%;
   }
 
+  .dropdown-menu {
+    float: none;
+  }
+
+  .dropdown-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: row;
+  }
+
   .dropdown-btn {
     display: none;
   }
 
   .dropdown-content {
     display: flex;
-    justify-content: stretch;
+    flex-direction: row;
+    justify-content: center;
+    position: initial;
+    height: 10vh;
+    width: 100%;
     padding: 0;
     background-color: #fff;
-    position: relative;
   }
 
   .item {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 30%;
@@ -103,6 +115,39 @@ $desktop-width: 1365px;
   }
 
   .extra-buttons {
-    font-size: 30pt;
+    font-size: 25pt;
+  }
+}
+
+@media screen and (min-width: #{$desktop-width}) {
+  .NavBar {
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    overflow: hidden;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: initial;
+    height: 10vh;
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .company-logo {
+    height: 10vh;
+    margin-right: 10%;
+  }
+
+  .item {
+    font-size: 13pt;
+  }
+
+  .extra-buttons {
+    font-size: 25pt;
   }
 }

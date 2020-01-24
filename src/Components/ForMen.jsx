@@ -22,7 +22,7 @@ class ForMen extends Component {
     const { products } = this.state;
     return (
       <div>
-        <p className="display-category">for Him</p>
+        <p className="display-category-men">for Him</p>
         <div className="display-options">
           <button className="left-btn">Filter</button>
           <button>Sort</button>

@@ -7,6 +7,7 @@
   background-position: center;
   display: grid;
   grid-template-rows: 12vh 57vh 25vh;
+  overflow: hidden;
 }
 
 .company-name {
@@ -43,7 +44,6 @@ $desktop-width: 1365px;
 @media screen and (min-width: #{$ipad-width}) {
   .company-name {
     font-size: 80pt;
-    text-align: right;
     text-align: center;
     padding: 15% 0 0 0;
   }
@@ -52,6 +52,27 @@ $desktop-width: 1365px;
       font-size: 15pt;
       width: 20%;
       height: 7.5vh;
+    }
+  }
+}
+
+@media screen and (min-width: #{$desktop-width}) {
+  .Homepage {
+    width: 100%;
+    grid-template-rows: 0vh 55vh 20vh;
+  }
+
+  .company-name {
+    text-align: center;
+    font-size: 110pt;
+  }
+  .homepage-links {
+    display: flex;
+    justify-content: center;
+    .homepage-btn {
+      width: 15%;
+      margin-right: 1%;
+      margin-left: 1%;
     }
   }
 }

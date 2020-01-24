@@ -1,0 +1,31 @@
+.IndividualProduct {
+  display: none;
+}
+
+$ipad-width: 1024px;
+$desktop-width: 1365px;
+
+@media screen and (min-width: #{$desktop-width}) {
+  .IndividualProduct {
+    position: fixed;
+    right: 10px;
+    bottom: 5vh;
+    height: 40vh;
+    width: 500px;
+    background-color: #ecebe9;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .viewer-img {
+      height: 150px;
+    }
+
+    .size-selector {
+      width: 100px;
+      color: black;
+    }
+  }
+}
