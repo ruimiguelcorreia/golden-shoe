@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.scss";
 
 import NavBar from "./Components/NavBar";
+import Basket from "./Components/Basket";
 import Homepage from "./Components/Homepage";
 import ForWomen from "./Components/ForWomen";
 import ForMen from "./Components/ForMen";
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/for-women" component={ForWomen} />
           <Route exact path="/for-men" component={ForMen} />
           <Route exact path="/faq" component={Faqs} />
+          <Route exact path="/basket" component={Basket} />
         </Switch>
         <Footer />
       </div>

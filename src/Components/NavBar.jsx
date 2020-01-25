@@ -35,7 +35,9 @@ class NavBar extends Component {
             <img src={logo} alt="Golden Shoe Logo" className="company-logo" />
           </Link>
           <div className="extra-buttons">
-            <ion-icon name="ios-basket" />
+            <Link to="/basket" className="extra-buttons">
+              <ion-icon name="ios-basket" />
+            </Link>
             <ion-icon name="person" />
           </div>
         </ul>

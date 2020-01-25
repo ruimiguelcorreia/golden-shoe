@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProductCard from "./ProductCard";
+import ProductComp from "./ProductComp";
 import Axios from "axios";
 
 import "../Styles/ForWomen.scss";
@@ -8,18 +9,24 @@ class ForMen extends Component {
   constructor() {
     super();
     this.state = {
-      products: []
+      products: [],
+      currentProductRender: {},
+      isProductSelected: false
     };
   }
 
   componentDidMount() {
-    Axios.get("http://localhost:3000/men").then(response =>
-      this.setState({ products: response.data })
-    );
+    Axios.get("http://localhost:3000/products", {
+      params: { for: "men" }
+    }).then(response => this.setState({ products: response.data }));
   }
 
+  handleViewProduct = event => {
+    this.setState({ isProductSelected: true, currentProductRender: event });
+  };
+
   render() {
-    const { products } = this.state;
+    const { isProductSelected, products } = this.state;
     return (
       <div>
         <p className="display-category-men">for Him</p>
@@ -30,9 +37,15 @@ class ForMen extends Component {
         <div className="products">
           {products.map(product => (
             <div key={product.id}>
-              <ProductCard {...product} />
+              <ProductCard
+                {...product}
+                onViewProduct={this.handleViewProduct}
+              />
             </div>
           ))}
+          {isProductSelected && (
+            <ProductComp {...this.state.currentProductRender} />
+          )}
         </div>
       </div>
     );
