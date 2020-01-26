@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ProductCard from "./ProductCard";
 import ProductComp from "./ProductComp";
 import Axios from "axios";
-import Link from "react-router-dom";
 
 import "../Styles/ForWomen.scss";
 
@@ -11,6 +10,9 @@ class ForWomen extends Component {
     super();
     this.state = {
       products: [],
+      filteredType: "",
+      filteredColor: "",
+      sortPrice: "",
       currentProductRender: {},
       isProductSelected: false
     };
@@ -28,6 +30,26 @@ class ForWomen extends Component {
     this.setState({ isProductSelected: true, currentProductRender: event });
   };
 
+  handleFilter(type, color, price) {
+    const typeValue = type ? type.target.value : this.state.filteredType;
+    const typeColor = color ? color.target.value : this.state.filteredColor;
+    const typePrice = price ? price.target.value : this.state.sortPrice;
+    this.setState({
+      filteredType: typeValue,
+      filteredColor: typeColor,
+      sortPrice: typePrice
+    });
+
+    Axios.get("http://localhost:3000/products", {
+      params: {
+        for: "women",
+        type: typeValue,
+        color: typeColor,
+        price: typePrice
+      }
+    }).then(response => this.setState({ products: response.data }));
+  }
+
   render() {
     const { isProductSelected, products } = this.state;
     return (
@@ -38,11 +60,9 @@ class ForWomen extends Component {
             Filter:
             <label>
               By Type:{" "}
-              <select>
+              <select onChange={e => this.handleFilter(e)}>
                 <option> </option>
-                <Link to value="boots">
-                  Boots
-                </Link>
+                <option value="boots">Boots</option>
                 <option value="knee-high boots">Knee-High Boots</option>
                 <option value="ankle-boots">Ankle Boots</option>
                 <option value="trainers">Trainers</option>
@@ -51,24 +71,52 @@ class ForWomen extends Component {
             </label>
             <label>
               By Color:{" "}
-              <button value="black" className="color-button black"></button>
-              <button value="beige" className="color-button beige"></button>
-              <button value="white" className="color-button white"></button>
+              <button
+                value="black"
+                className="color-button black"
+                onClick={e => this.handleFilter(undefined, e)}
+              ></button>
+              <button
+                value="beige"
+                className="color-button beige"
+                onClick={e => this.handleFilter(undefined, e)}
+              ></button>
+              <button
+                value="white"
+                className="color-button white"
+                onClick={e => this.handleFilter(undefined, e)}
+              ></button>
               <button
                 value="light-pink"
                 className="color-button light-pink"
+                onClick={e => this.handleFilter(undefined, e)}
               ></button>
-              <button value="cream" className="color-button cream"></button>
+              <button
+                value="cream"
+                className="color-button cream"
+                onClick={e => this.handleFilter(undefined, e)}
+              ></button>
               <button
                 value="dark-brown"
                 className="color-button dark-brown"
+                onClick={e => this.handleFilter(undefined, e)}
               ></button>
             </label>
           </span>
           <span className="right-side">
             Sort:
-            <button>Price Ascending</button>
-            <button>Price Descending</button>
+            <button
+              value="ascending"
+              onClick={e => this.handleFilter(undefined, undefined, e)}
+            >
+              Price Ascending
+            </button>
+            <button
+              value="descending"
+              onClick={e => this.handleFilter(undefined, undefined, e)}
+            >
+              Price Descending
+            </button>
           </span>
         </div>
         <div className="working-area">

@@ -47,11 +47,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-/* animated fadeInLeft
-
-              <button className="close-btn" onClick={this.closeDropdown}>
-                <ion-icon name="close" />
-              </button>
-
-*/
