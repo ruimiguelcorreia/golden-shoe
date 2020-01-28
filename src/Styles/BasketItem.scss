@@ -1,0 +1,29 @@
+.BasketItem {
+  display: grid;
+  grid-template-columns: 10% 10% 60% 20%;
+  margin-left: 10px;
+  margin-top: 20px;
+  align-items: center;
+  & .text {
+    font-size: 11pt;
+  }
+  & .basket-img {
+    height: 40px;
+  }
+}
+
+$ipad-width: 1024px;
+$desktop-width: 1365px;
+
+@media screen and (min-width: #{$ipad-width}) {
+  .BasketItem {
+    margin-left: 100px;
+
+    & .text {
+      font-size: 13pt;
+    }
+  }
+}
+
+@media screen and (min-width: #{$desktop-width}) {
+}

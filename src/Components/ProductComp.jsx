@@ -55,14 +55,18 @@ class ProductComp extends Component {
         size: this.state.size
       });
       localStorage.setItem("basket", JSON.stringify(basket));
+      alert("Item added to basket!");
     }
   };
 
   render() {
-    const { title, img, price, sizes } = this.props;
+    const { title, img, price, sizes, closeBox } = this.props;
     const { productIsSelected, quantity, stock } = this.state;
     return (
       <div className="IndividualProduct">
+        <button className="close-button" onClick={closeBox}>
+          X
+        </button>
         <span>{title}</span>
         <span>
           <img src={img} alt="Selected Shoe" className="viewer-img" />
@@ -78,16 +82,26 @@ class ProductComp extends Component {
         </select>
         {productIsSelected && stock !== 0 && (
           <div>
-            <button value="dec" onClick={e => this.handleQuantity(e)}>
+            <button
+              value="dec"
+              className="dec"
+              onClick={e => this.handleQuantity(e)}
+            >
               -
             </button>
             <span>{quantity}</span>
-            <button value="inc" onClick={e => this.handleQuantity(e)}>
+            <button
+              value="inc"
+              className="dec"
+              onClick={e => this.handleQuantity(e)}
+            >
               +
             </button>
           </div>
         )}
-        <button onClick={this.addToBasket}>Add to Basket</button>
+        <button className="add-to-basket" onClick={this.addToBasket}>
+          Add to Basket
+        </button>
       </div>
     );
   }

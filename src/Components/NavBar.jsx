@@ -8,10 +8,25 @@ import logo from "../img/golden-shoe-logo.png";
 class NavBar extends Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      basketNumber: 0
+    };
+  }
+
+  componentDidMount() {
+    const basket = localStorage.getItem("basket");
+    const basketNumber = basket ? JSON.parse(basket) : [];
+
+    if (basketNumber !== []) {
+      this.setState({
+        basketNumber: basketNumber.length
+      });
+    }
   }
 
   render() {
+    const { basketNumber } = this.state;
+
     return (
       <div className="NavBar">
         <ul className="NavBar">
@@ -37,6 +52,7 @@ class NavBar extends Component {
           <div className="extra-buttons">
             <Link to="/basket" className="extra-buttons">
               <ion-icon name="ios-basket" />
+              <span className="total-number">({basketNumber})</span>
             </Link>
             <ion-icon name="person" />
           </div>

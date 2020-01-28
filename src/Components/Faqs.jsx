@@ -1,8 +1,15 @@
 import React from "react";
 
+import FaqItem from "./FaqItem";
+
+import "../Styles/Faqs.scss";
+
 const Faqs = () => (
-  <div>
-    <h1>FAQs</h1>
+  <div className="FAQ">
+    <FaqItem />
+    <FaqItem />
+    <FaqItem />
+    <FaqItem />
   </div>
 );
 

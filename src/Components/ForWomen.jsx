@@ -30,6 +30,10 @@ class ForWomen extends Component {
     this.setState({ isProductSelected: true, currentProductRender: event });
   };
 
+  handleBoxClosing = event => {
+    this.setState({ isProductSelected: false });
+  };
+
   handleFilter(type, color, price) {
     const typeValue = type ? type.target.value : this.state.filteredType;
     const typeColor = color ? color.target.value : this.state.filteredColor;
@@ -55,68 +59,72 @@ class ForWomen extends Component {
     return (
       <div>
         <p className="display-category-women">for Her</p>
-        <div className="display-options">
+        <div className="display-titles">
           <span className="left-side">
-            Filter:
-            <label>
-              By Type:{" "}
-              <select onChange={e => this.handleFilter(e)}>
-                <option> </option>
-                <option value="boots">Boots</option>
-                <option value="knee-high boots">Knee-High Boots</option>
-                <option value="ankle-boots">Ankle Boots</option>
-                <option value="trainers">Trainers</option>
-                <option value="loafers">Loafers</option>
-              </select>
-            </label>
-            <label>
-              By Color:{" "}
-              <button
-                value="black"
-                className="color-button black"
-                onClick={e => this.handleFilter(undefined, e)}
-              ></button>
-              <button
-                value="beige"
-                className="color-button beige"
-                onClick={e => this.handleFilter(undefined, e)}
-              ></button>
-              <button
-                value="white"
-                className="color-button white"
-                onClick={e => this.handleFilter(undefined, e)}
-              ></button>
-              <button
-                value="light-pink"
-                className="color-button light-pink"
-                onClick={e => this.handleFilter(undefined, e)}
-              ></button>
-              <button
-                value="cream"
-                className="color-button cream"
-                onClick={e => this.handleFilter(undefined, e)}
-              ></button>
-              <button
-                value="dark-brown"
-                className="color-button dark-brown"
-                onClick={e => this.handleFilter(undefined, e)}
-              ></button>
-            </label>
+            <span className="display-category">Filter</span>
+            <div className="display-options">
+              <span>By Type: </span>
+              <div>
+                <select onChange={e => this.handleFilter(e)}>
+                  <option> </option>
+                  <option value="boots">Boots</option>
+                  <option value="knee-high boots">Knee-High Boots</option>
+                  <option value="ankle-boots">Ankle Boots</option>
+                  <option value="trainers">Trainers</option>
+                  <option value="loafers">Loafers</option>
+                </select>
+              </div>
+              <span>By Color: </span>
+              <div>
+                <button
+                  value="black"
+                  className="color-button black"
+                  onClick={e => this.handleFilter(undefined, e)}
+                ></button>
+                <button
+                  value="beige"
+                  className="color-button beige"
+                  onClick={e => this.handleFilter(undefined, e)}
+                ></button>
+                <button
+                  value="white"
+                  className="color-button white"
+                  onClick={e => this.handleFilter(undefined, e)}
+                ></button>
+                <button
+                  value="light-pink"
+                  className="color-button light-pink"
+                  onClick={e => this.handleFilter(undefined, e)}
+                ></button>
+                <button
+                  value="cream"
+                  className="color-button cream"
+                  onClick={e => this.handleFilter(undefined, e)}
+                ></button>
+                <button
+                  value="dark-brown"
+                  className="color-button dark-brown"
+                  onClick={e => this.handleFilter(undefined, e)}
+                ></button>
+              </div>
+            </div>
           </span>
           <span className="right-side">
-            Sort:
-            <button
-              value="ascending"
-              onClick={e => this.handleFilter(undefined, undefined, e)}
-            >
-              Price Ascending
-            </button>
-            <button
-              value="descending"
-              onClick={e => this.handleFilter(undefined, undefined, e)}
-            >
-              Price Descending
-            </button>
+            Sort by Price:
+            <div className="asc-desc">
+              <button
+                value="ascending"
+                onClick={e => this.handleFilter(undefined, undefined, e)}
+              >
+                &#9651;
+              </button>
+              <button
+                value="descending"
+                onClick={e => this.handleFilter(undefined, undefined, e)}
+              >
+                &#9661;
+              </button>
+            </div>
           </span>
         </div>
         <div className="working-area">
@@ -131,7 +139,10 @@ class ForWomen extends Component {
             ))}
           </div>
           {isProductSelected && (
-            <ProductComp {...this.state.currentProductRender} />
+            <ProductComp
+              {...this.state.currentProductRender}
+              closeBox={this.handleBoxClosing}
+            />
           )}
         </div>
       </div>

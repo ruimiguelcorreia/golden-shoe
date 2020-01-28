@@ -1,11 +1,15 @@
 import React from "react";
 
+import "../Styles/BasketItem.scss";
+
 const BasketItem = props => (
-  <div>
-    <span>{props.quantity}</span>
-    <span>{props.img}</span>
-    <span>{props.title}</span>
-    <span>{props.price}</span>
+  <div className="BasketItem">
+    <span className="text">{props.quantity} x</span>
+    <span>
+      <img src={props.img} alt="Selected Item" className="basket-img" />
+    </span>
+    <span className="text">{props.title}</span>
+    <span className="text">£ {props.price}</span>
   </div>
 );
 
