@@ -36,8 +36,12 @@ class Basket extends Component {
 
   clearBasket = event => {
     localStorage.clear();
-    alert("Shopping Cart is now clear!");
+    alert("Shopping Cart is now clear! Please refresh the page.");
   };
+
+  checkout() {
+    alert("Checkout page not available, yet.");
+  }
 
   componentDidMount() {
     const productsInBasket = localStorage.getItem("basket");
@@ -75,6 +79,9 @@ class Basket extends Component {
           <button className="clear-basket" onClick={this.clearBasket}>
             Clear
           </button>
+          <button className="checkout-basket" onClick={this.checkout}>
+            Checkout
+          </button>
           <div className="items-added">
             <span className="shopping-cart">Shopping Cart:</span>
             {itemsInTheBasket.map(item => (
@@ -87,7 +94,7 @@ class Basket extends Component {
             <form className="discount-form">
               <input
                 type="text"
-                placeholder="eg. DXASRFA10"
+                placeholder="eg. DISCOUNTCODE"
                 value={discount}
                 onChange={this.handleFieldChange}
               ></input>

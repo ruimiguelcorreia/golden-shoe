@@ -15,6 +15,17 @@
     color: #fff;
   }
 
+  .checkout-basket {
+    position: absolute;
+    bottom: 11vh;
+    right: 24vw;
+    border: none;
+    height: 30px;
+    width: 70px;
+    background-color: #5a382a;
+    color: #fff;
+  }
+
   & .display-area {
     height: 75vh;
     width: 90vw;
@@ -86,6 +97,17 @@ $desktop-width: 1365px;
       border: none;
     }
 
+    .checkout-basket {
+      position: absolute;
+      bottom: 11vh;
+      right: 12vw;
+      border: none;
+      height: 30px;
+      width: 70px;
+      background-color: #5a382a;
+      color: #fff;
+    }
+
     & .display-area {
       height: 75vh;
       width: 90vw;
@@ -122,6 +144,17 @@ $desktop-width: 1365px;
       border: none;
       height: 30px;
       width: 50px;
+      background-color: #5a382a;
+      color: #fff;
+    }
+
+    .checkout-basket {
+      position: absolute;
+      bottom: 7vh;
+      right: 4vw;
+      border: none;
+      height: 30px;
+      width: 70px;
       background-color: #5a382a;
       color: #fff;
     }
